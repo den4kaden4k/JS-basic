@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			'use strict';
+			let deposit = prompt('Введите сумму депозита:'); 
+			const tail = deposit[deposit.length - 1];     // записываем последнюю цифру
+			const tail2 = deposit[deposit.length - 2] + deposit[deposit.length - 1];   // записываем две последние цифры
+			if (tail == 1 && tail2 != 11) {
+				alert(`Ваша сумма в ${deposit} рубль успешно зачислена.`)
+			} else if ((tail == 2 || tail == 3 || tail == 4) && !(tail2 < 15)) {  // исключаем числа, заканчивающиеся на 12, 13, 14
+				alert(`Ваша сумма в ${deposit} рубля успешно зачислена.`)
+			} else {
+				alert(`Ваша сумма в ${deposit} рублей успешно зачислена.`)
+			}			
+		</script>
+</body>
+</html>
