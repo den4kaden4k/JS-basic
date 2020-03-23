@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			'use strict';
+			for (let i = 0; i < 11; i++) {
+				console.log(checkNumber(i));
+			}
+			function checkNumber(number) {
+				if (number == 0) {
+					return '0 - это ноль';
+				}
+				else if (number % 2 == 0) {
+					return `${number} - четное число`;
+				}
+				return `${number} - нечетное число`;
+			}
+		</script>
+</body>
+</html>
